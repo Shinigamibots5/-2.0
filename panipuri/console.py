@@ -1,7 +1,7 @@
 import logging
 from logging.handlers import RotatingFileHandler
 
-from AdityaHalder.utilities.config import LOG_FILE_NAME
+from panipuri.utilities.config import LOG_FILE_NAME
 
 logging.basicConfig(
     level=logging.INFO,
