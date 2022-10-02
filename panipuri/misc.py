@@ -4,8 +4,8 @@ import time
 import heroku3
 from pyrogram import filters
 
-from AdityaHalder.utilities import config
-from AdityaHalder.modules.core.adb import pymongodb
+from panipuri.utilities import config
+from panipuri.modules.core.adb import pymongodb
 
 from .console import LOGGER
 
