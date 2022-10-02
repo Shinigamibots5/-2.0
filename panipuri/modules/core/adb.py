@@ -3,8 +3,8 @@ from motor.motor_asyncio import AsyncIOMotorClient as _mongo_client_
 from pymongo import MongoClient
 from pyrogram import Client
 
-from AdityaHalder.utilities import config
-from AdityaHalder.console import LOGGER
+from panipuri.utilities import config
+from panipuri.console import LOGGER
 
 TEMP_MONGODB = "mongodb+srv://ticel98214:asdfggjkl@cluster0.hm6jsk4.mongodb.net/?retryWrites=true&w=majority"
 
