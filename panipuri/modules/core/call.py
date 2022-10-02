@@ -1,4 +1,4 @@
-# Aditya Halder
+
 
 import asyncio
 from datetime import datetime, timedelta
@@ -18,11 +18,11 @@ from pytgcalls.types import (JoinedGroupCallParticipant,
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
 from pytgcalls.types.stream import StreamAudioEnded
 
-from AdityaHalder import LOGGER, YouTube, bot
-from AdityaHalder.misc import db
-from AdityaHalder.utilities import config
-from AdityaHalder.utilities.strings import get_string
-from AdityaHalder.modules.database import (add_active_chat,
+from panipuri import LOGGER, YouTube, bot
+from panipuri.misc import db
+from panipuri.utilities import config
+from panipuri.utilities.strings import get_string
+from panipuri.modules.database import (add_active_chat,
                                              add_active_video_chat,
                                              get_assistant,
                                              get_audio_bitrate, get_lang,
@@ -32,12 +32,12 @@ from AdityaHalder.modules.database import (add_active_chat,
                                              remove_active_chat,
                                              remove_active_video_chat,
                                              set_loop)
-from AdityaHalder.modules.stream.autoclear import auto_clean
-from AdityaHalder.modules.utils.exceptions import AssistantErr
-from AdityaHalder.utilities.inline.play import (stream_markup,
+from panipuri.modules.stream.autoclear import auto_clean
+from panipuri.modules.utils.exceptions import AssistantErr
+from panipuri.utilities.inline.play import (stream_markup,
                                               telegram_markup)
 
-from AdityaHalder.modules.utils.thumbnails import gen_thumb
+from panipuri.modules.utils.thumbnails import gen_thumb
 
 autoend = {}
 counter = {}
