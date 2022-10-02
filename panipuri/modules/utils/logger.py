@@ -1,6 +1,6 @@
-from AdityaHalder import bot
-from AdityaHalder.modules.database import is_on_off
-from AdityaHalder.utilities.config import LOG, LOG_GROUP_ID
+from panipuri import bot
+from panipuri.modules.database import is_on_off
+from panipuri.utilities.config import LOG, LOG_GROUP_ID
 
 
 async def play_logs(message, streamtype):

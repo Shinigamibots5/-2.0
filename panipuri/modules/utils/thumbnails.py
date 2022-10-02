@@ -1,4 +1,4 @@
-# Powered By @AdityaHalder
+# Powered By @panipuri
 
 import os
 import re
@@ -10,7 +10,7 @@ from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
                  ImageFont, ImageOps)
 from youtubesearchpython.__future__ import VideosSearch
 
-from AdityaHalder.utilities.config import MUSIC_BOT_NAME, YOUTUBE_IMG_URL
+from panipuri.utilities.config import MUSIC_BOT_NAME, YOUTUBE_IMG_URL
 
 
 themes = ["bgreen", "blue", "colorfull", "dgreen", "hgreen", "lgreen", "lyellow", "orange", "pink", "purple", "rainbow", "red", "sky", "thumbnail", "yellow"]
@@ -65,7 +65,7 @@ async def gen_thumb(videoid):
         images = random.choice(themes)
         border = random.choice(colors)
         image1 = Image.open(f"cache/thumb{videoid}.png")
-        image2 = Image.open(f"AdityaHalder/resource/{images}.png")
+        image2 = Image.open(f"panipuri/resource/{images}.png")
         image3 = changeImageSize(1280, 720, image1)
         image4 = changeImageSize(1280, 720, image2)
         image5 = image3.convert("RGBA")
@@ -74,11 +74,11 @@ async def gen_thumb(videoid):
         logo = Image.open("cache/temp.png")
         img = ImageOps.expand(logo, border=10, fill=f"{border}")
         draw = ImageDraw.Draw(img)
-        font = ImageFont.truetype("AdityaHalder/resource/font.otf", 32)
+        font = ImageFont.truetype("panipuri/resource/font.otf", 32)
         draw.text((190, 555), f"Title: {title[:50]} ...", (255, 255, 255), font=font)
         draw.text((190, 595), f"Duration: {duration}", (255, 255, 255), font=font)
         draw.text((190, 635), f"Views: {views}", (255, 255, 255), font=font)
-        draw.text((190, 675), f"Powered By: Aditya Halder (@AdityaHalder)", (255, 255, 255), font=font)
+        draw.text((190, 675), f"Powered By: dudu dudu (@panipuri)", (255, 255, 255), font=font)
         try:
             os.remove(f"cache/thumb{videoid}.png")
             os.remove(f"cache/temp.png")

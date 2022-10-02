@@ -1,4 +1,4 @@
-# Aditya Halder
+# dudu dudu
 
 import asyncio
 import shlex
@@ -7,8 +7,8 @@ from typing import Tuple
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 
-from AdityaHalder.utilities import config
-from AdityaHalder.console import LOGGER
+from panipuri.utilities import config
+from panipuri.console import LOGGER
 
 
 def install_req(cmd: str) -> Tuple[str, str, int, int]:

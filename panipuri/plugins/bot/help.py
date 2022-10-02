@@ -3,15 +3,15 @@ from typing import Union
 from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from AdityaHalder.utilities.config import BANNED_USERS
-from AdityaHalder.utilities.strings import get_command, get_string, helpers
-from AdityaHalder import bot
-from AdityaHalder.misc import SUDOERS
-from AdityaHalder.utilities.inline import help_pannel
-from AdityaHalder.modules.database import get_lang, is_commanddelete_on
-from AdityaHalder.modules.decorators.language import (LanguageStart,
+from panipuri.utilities.config import BANNED_USERS
+from panipuri.utilities.strings import get_command, get_string, helpers
+from panipuri import bot
+from panipuri.misc import SUDOERS
+from panipuri.utilities.inline import help_pannel
+from panipuri.modules.database import get_lang, is_commanddelete_on
+from panipuri.modules.decorators.language import (LanguageStart,
                                                   languageCB)
-from AdityaHalder.utilities.inline.help import (help_back_markup,
+from panipuri.utilities.inline.help import (help_back_markup,
                                           private_help_panel)
 
 ### Command

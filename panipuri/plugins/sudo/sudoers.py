@@ -1,12 +1,12 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AdityaHalder.utilities.config import BANNED_USERS, MONGO_DB_URL, OWNER_ID
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import bot
-from AdityaHalder.misc import SUDOERS
-from AdityaHalder.modules.database import add_sudo, remove_sudo
-from AdityaHalder.modules.decorators.language import language
+from panipuri.utilities.config import BANNED_USERS, MONGO_DB_URL, OWNER_ID
+from panipuri.utilities.strings import get_command
+from panipuri import bot
+from panipuri.misc import SUDOERS
+from panipuri.modules.database import add_sudo, remove_sudo
+from panipuri.modules.decorators.language import language
 
 # Command
 ADDSUDO_COMMAND = get_command("ADDSUDO_COMMAND")
@@ -21,7 +21,7 @@ SUDOUSERS_COMMAND = get_command("SUDOUSERS_COMMAND")
 async def useradd(client, message: Message, _):
     if MONGO_DB_URL is None:
         return await message.reply_text(
-            "**Due to bot's privacy issues, You can't manage sudo users when you're using Aditya's Database.\n\n Please fill your MONGO_DB_URL in your vars to use this feature**"
+            "**Due to bot's privacy issues, You can't manage sudo users when you're using dudu's Database.\n\n Please fill your MONGO_DB_URL in your vars to use this feature**"
         )
     if not message.reply_to_message:
         if len(message.command) != 2:

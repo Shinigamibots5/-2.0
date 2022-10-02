@@ -1,4 +1,4 @@
-# Aditya Halder
+# dudu dudu
 
 import sys
 from pyrogram import Client

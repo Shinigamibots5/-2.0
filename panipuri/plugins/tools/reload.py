@@ -3,15 +3,15 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import CallbackQuery, Message
 
-from AdityaHalder.utilities.config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import bot
-from AdityaHalder.modules.core.call import aditya
-from AdityaHalder.misc import db
-from AdityaHalder.modules.database import get_authuser_names, get_cmode
-from AdityaHalder.modules.decorators import (ActualAdminCB, AdminActual,
+from panipuri.utilities.config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
+from panipuri.utilities.strings import get_command
+from panipuri import bot
+from panipuri.modules.core.call import dudu
+from panipuri.misc import db
+from panipuri.modules.database import get_authuser_names, get_cmode
+from panipuri.modules.decorators import (ActualAdminCB, AdminActual,
                                          language)
-from AdityaHalder.modules.utils.formatters import alpha_to_int
+from panipuri.modules.utils.formatters import alpha_to_int
 
 ### Multi-Lang Commands
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")
@@ -60,7 +60,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await aditya.stop_stream(message.chat.id)
+        await dudu.stop_stream(message.chat.id)
     except:
         pass
     chat_id = await get_cmode(message.chat.id)
@@ -71,7 +71,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await aditya.stop_stream(chat_id)
+            await dudu.stop_stream(chat_id)
         except:
             pass
     return await mystic.edit_text(

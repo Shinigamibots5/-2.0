@@ -1,6 +1,6 @@
 import os
 
-from AdityaHalder.utilities.config import autoclean
+from panipuri.utilities.config import autoclean
 
 
 async def auto_clean(popped):

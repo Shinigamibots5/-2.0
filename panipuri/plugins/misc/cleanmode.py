@@ -5,12 +5,12 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.raw import types
 
-from AdityaHalder.utilities import config
-from AdityaHalder.utilities.config import adminlist, chatstats, clean, userstats
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import bot, app
-from AdityaHalder.misc import SUDOERS
-from AdityaHalder.modules.database import (get_active_chats,
+from panipuri.utilities import config
+from panipuri.utilities.config import adminlist, chatstats, clean, userstats
+from panipuri.utilities.strings import get_command
+from panipuri import bot, app
+from panipuri.misc import SUDOERS
+from panipuri.modules.database import (get_active_chats,
                                        get_authuser_names, get_client,
                                        get_particular_top,
                                        get_served_chats,
@@ -18,8 +18,8 @@ from AdityaHalder.modules.database import (get_active_chats,
                                        is_cleanmode_on, set_queries,
                                        update_particular_top,
                                        update_user_top)
-from AdityaHalder.modules.decorators.language import language
-from AdityaHalder.modules.utils.formatters import alpha_to_int
+from panipuri.modules.decorators.language import language
+from panipuri.modules.utils.formatters import alpha_to_int
 
 BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
 AUTO_DELETE = config.CLEANMODE_DELETE_MINS
@@ -156,7 +156,7 @@ async def braodcast_message(client, message, _):
     if "-assistant" in message.text:
         aw = await message.reply_text(_["broad_2"])
         text = _["broad_3"]
-        from AdityaHalder.modules.core.app import assistants
+        from panipuri.modules.core.app import assistants
 
         for num in assistants:
             sent = 0

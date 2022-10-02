@@ -5,22 +5,22 @@ from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 from youtubesearchpython.__future__ import VideosSearch
 
-from AdityaHalder.utilities import config
-from AdityaHalder.utilities.config import BANNED_USERS
-from AdityaHalder.utilities.config.config import OWNER_ID
-from AdityaHalder.utilities.strings import get_command, get_string
-from AdityaHalder import Telegram, YouTube, bot
-from AdityaHalder.misc import SUDOERS
-from AdityaHalder.plugins.play.playlist import del_plist_msg
-from AdityaHalder.plugins.sudo.sudoers import sudoers_list
-from AdityaHalder.modules.database import (add_served_chat,
+from panipuri.utilities import config
+from panipuri.utilities.config import BANNED_USERS
+from panipuri.utilities.config.config import OWNER_ID
+from panipuri.utilities.strings import get_command, get_string
+from panipuri import Telegram, YouTube, bot
+from panipuri.misc import SUDOERS
+from panipuri.plugins.play.playlist import del_plist_msg
+from panipuri.plugins.sudo.sudoers import sudoers_list
+from panipuri.modules.database import (add_served_chat,
                                        add_served_user,
                                        blacklisted_chats,
                                        get_assistant, get_lang,
                                        get_userss, is_on_off,
                                        is_served_private_chat)
-from AdityaHalder.modules.decorators.language import LanguageStart
-from AdityaHalder.utilities.inline import (help_pannel, private_panel, private_panelx, start_pannel)
+from panipuri.modules.decorators.language import LanguageStart
+from panipuri.utilities.inline import (help_pannel, private_panel, private_panelx, start_pannel)
 
 loop = asyncio.get_running_loop()
 

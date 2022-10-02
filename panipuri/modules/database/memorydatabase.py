@@ -1,8 +1,8 @@
-# Aditya Halder
+# dudu dudu
 
-from AdityaHalder.utilities import config
-from AdityaHalder.utilities.config import PRIVATE_BOT_MODE
-from AdityaHalder.modules.core.adb import mongodb
+from panipuri.utilities import config
+from panipuri.utilities.config import PRIVATE_BOT_MODE
+from panipuri.modules.core.adb import mongodb
 
 channeldb = mongodb.cplaymode
 commanddb = mongodb.commands

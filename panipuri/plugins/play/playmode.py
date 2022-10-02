@@ -1,13 +1,13 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from AdityaHalder.utilities.config import BANNED_USERS
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import bot
-from AdityaHalder.modules.database import (get_playmode, get_playtype,
+from panipuri.utilities.config import BANNED_USERS
+from panipuri.utilities.strings import get_command
+from panipuri import bot
+from panipuri.modules.database import (get_playmode, get_playtype,
                                        is_nonadmin_chat)
-from AdityaHalder.modules.decorators import language
-from AdityaHalder.utilities.inline.settings import playmode_users_markup
+from panipuri.modules.decorators import language
+from panipuri.utilities.inline.settings import playmode_users_markup
 
 ### Commands
 PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")

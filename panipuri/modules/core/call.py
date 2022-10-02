@@ -1,4 +1,4 @@
-
+# dudu dudu
 
 import asyncio
 from datetime import datetime, timedelta
@@ -617,4 +617,4 @@ class Call(PyTgCalls):
                 autoend[chat_id] = {}
 
 
-aditya = Call()
+dudu = Call()

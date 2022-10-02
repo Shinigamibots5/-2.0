@@ -1,15 +1,15 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AdityaHalder.utilities import config
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import bot
-from AdityaHalder.misc import SUDOERS
-from AdityaHalder.modules.database import (add_private_chat,
+from panipuri.utilities import config
+from panipuri.utilities.strings import get_command
+from panipuri import bot
+from panipuri.misc import SUDOERS
+from panipuri.modules.database import (add_private_chat,
                                        get_private_served_chats,
                                        is_served_private_chat,
                                        remove_private_chat)
-from AdityaHalder.modules.decorators.language import language
+from panipuri.modules.decorators.language import language
 
 AUTHORIZE_COMMAND = get_command("AUTHORIZE_COMMAND")
 UNAUTHORIZE_COMMAND = get_command("UNAUTHORIZE_COMMAND")

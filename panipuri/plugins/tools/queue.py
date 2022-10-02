@@ -6,19 +6,19 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 
-from AdityaHalder import bot
-from AdityaHalder.misc import db
-from AdityaHalder.modules.utils import (Adityabin, get_channeplayCB,
+from panipuri import bot
+from panipuri.misc import db
+from panipuri.modules.utils import (dudubin, get_channeplayCB,
                               seconds_to_min)
-from AdityaHalder.modules.database import (get_cmode, is_active_chat,
+from panipuri.modules.database import (get_cmode, is_active_chat,
                                        is_music_playing)
-from AdityaHalder.modules.decorators.language import language, languageCB
+from panipuri.modules.decorators.language import language, languageCB
 
-from AdityaHalder.utilities import config
-from AdityaHalder.utilities.config import BANNED_USERS
-from AdityaHalder.utilities.strings import get_command
+from panipuri.utilities import config
+from panipuri.utilities.config import BANNED_USERS
+from panipuri.utilities.strings import get_command
 
-from AdityaHalder.utilities.inline import queue_back_markup, queue_markup
+from panipuri.utilities.inline import queue_back_markup, queue_markup
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")

@@ -1,11 +1,11 @@
 from pyrogram import filters
 
-from AdityaHalder.utilities import config
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import bot
-from AdityaHalder.misc import SUDOERS
-from AdityaHalder.modules.database import autoend_off, autoend_on
-from AdityaHalder.modules.decorators.language import language
+from panipuri.utilities import config
+from panipuri.utilities.strings import get_command
+from panipuri import bot
+from panipuri.misc import SUDOERS
+from panipuri.modules.database import autoend_off, autoend_on
+from panipuri.modules.decorators.language import language
 
 # Commands
 AUTOEND_COMMAND = get_command("AUTOEND_COMMAND")

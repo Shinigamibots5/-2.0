@@ -1,16 +1,16 @@
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from AdityaHalder import YouTube, bot
-from AdityaHalder.misc import SUDOERS
-from AdityaHalder.modules.database.memorydatabase import is_maintenance
-from AdityaHalder.modules.database import (get_cmode, get_lang,
+from panipuri import YouTube, bot
+from panipuri.misc import SUDOERS
+from panipuri.modules.database.memorydatabase import is_maintenance
+from panipuri.modules.database import (get_cmode, get_lang,
                                              get_playmode, get_playtype,
                                              is_active_chat,
                                              is_commanddelete_on,
                                              is_served_private_chat)
-from AdityaHalder.utilities.strings import get_string
-from AdityaHalder.utilities.inline.playlist import botplaylist_markup
-from AdityaHalder.utilities.config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE, adminlist
+from panipuri.utilities.strings import get_string
+from panipuri.utilities.inline.playlist import botplaylist_markup
+from panipuri.utilities.config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE, adminlist
 
 
 def PlayWrapper(command):

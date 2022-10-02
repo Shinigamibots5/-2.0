@@ -1,12 +1,12 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AdityaHalder.utilities.config import BANNED_USERS
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import bot
-from AdityaHalder.modules.database.memorydatabase import (get_loop,
+from panipuri.utilities.config import BANNED_USERS
+from panipuri.utilities.strings import get_command
+from panipuri import bot
+from panipuri.modules.database.memorydatabase import (get_loop,
                                                       set_loop)
-from AdityaHalder.modules.decorators import AdminRightsCheck
+from panipuri.modules.decorators import AdminRightsCheck
 
 # Commands
 LOOP_COMMAND = get_command("LOOP_COMMAND")

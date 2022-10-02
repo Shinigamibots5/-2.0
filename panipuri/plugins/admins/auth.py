@@ -1,14 +1,14 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AdityaHalder.utilities.config import BANNED_USERS, adminlist
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import bot
-from AdityaHalder.modules.database import (delete_authuser, get_authuser,
+from panipuri.utilities.config import BANNED_USERS, adminlist
+from panipuri.utilities.strings import get_command
+from panipuri import bot
+from panipuri.modules.database import (delete_authuser, get_authuser,
                                        get_authuser_names,
                                        save_authuser)
-from AdityaHalder.modules.decorators import AdminActual, language
-from AdityaHalder.modules.utils.formatters import int_to_alpha
+from panipuri.modules.decorators import AdminActual, language
+from panipuri.modules.utils.formatters import int_to_alpha
 
 # Command
 AUTH_COMMAND = get_command("AUTH_COMMAND")

@@ -1,13 +1,13 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AdityaHalder.utilities.strings import get_command, get_string
-from AdityaHalder import bot
-from AdityaHalder.misc import SUDOERS
-from AdityaHalder.modules.database import (get_lang, is_maintenance,
+from panipuri.utilities.strings import get_command, get_string
+from panipuri import bot
+from panipuri.misc import SUDOERS
+from panipuri.modules.database import (get_lang, is_maintenance,
                                        maintenance_off,
                                        maintenance_on)
-from AdityaHalder.modules.decorators.language import language
+from panipuri.modules.decorators.language import language
 
 # Commands
 MAINTENANCE_COMMAND = get_command("MAINTENANCE_COMMAND")

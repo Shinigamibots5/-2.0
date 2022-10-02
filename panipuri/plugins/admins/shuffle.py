@@ -3,11 +3,11 @@ import random
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AdityaHalder.utilities.config import BANNED_USERS
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import bot
-from AdityaHalder.misc import db
-from AdityaHalder.modules.decorators import AdminRightsCheck
+from panipuri.utilities.config import BANNED_USERS
+from panipuri.utilities.strings import get_command
+from panipuri import bot
+from panipuri.misc import db
+from panipuri.modules.decorators import AdminRightsCheck
 
 # Commands
 SHUFFLE_COMMAND = get_command("SHUFFLE_COMMAND")

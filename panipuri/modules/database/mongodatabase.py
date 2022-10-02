@@ -1,8 +1,8 @@
-# Aditya Halder
+# dudu dudu
 
 from typing import Dict, List, Union
 
-from AdityaHalder.modules.core.adb import mongodb
+from panipuri.modules.core.adb import mongodb
 
 queriesdb = mongodb.queries
 userdb = mongodb.userstats

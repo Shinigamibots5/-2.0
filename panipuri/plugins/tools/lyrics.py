@@ -7,10 +7,10 @@ from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
-from AdityaHalder.utilities.config import BANNED_USERS, lyrical
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import bot
-from AdityaHalder.modules.decorators.language import language
+from panipuri.utilities.config import BANNED_USERS, lyrical
+from panipuri.utilities.strings import get_command
+from panipuri import bot
+from panipuri.modules.decorators.language import language
 
 ###Commands
 LYRICS_COMMAND = get_command("LYRICS_COMMAND")

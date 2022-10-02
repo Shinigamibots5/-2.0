@@ -3,26 +3,26 @@ import random
 from pyrogram import filters
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
 
-from AdityaHalder.utilities.config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
+from panipuri.utilities.config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     SOUNCLOUD_IMG_URL, STREAM_IMG_URL,
                     TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL, adminlist)
-from AdityaHalder import YouTube, bot
-from AdityaHalder.modules.core.call import aditya
-from AdityaHalder.misc import SUDOERS, db
-from AdityaHalder.modules.database import (is_active_chat,
+from panipuri import YouTube, bot
+from panipuri.modules.core.call import dudu
+from panipuri.misc import SUDOERS, db
+from panipuri.modules.database import (is_active_chat,
                                        is_music_playing, is_muted,
                                        is_nonadmin_chat, music_off,
                                        music_on, mute_off, mute_on,
                                        set_loop)
-from AdityaHalder.modules.decorators.language import languageCB
-from AdityaHalder.modules.utils.formatters import seconds_to_min
-from AdityaHalder.utilities.inline.play import (panel_markup_1,
+from panipuri.modules.decorators.language import languageCB
+from panipuri.modules.utils.formatters import seconds_to_min
+from panipuri.utilities.inline.play import (panel_markup_1,
                                           panel_markup_2,
                                           panel_markup_3,
                                           stream_markup,
                                           telegram_markup)
-from AdityaHalder.modules.stream.autoclear import auto_clean
-from AdityaHalder.modules.utils.thumbnails import gen_thumb
+from panipuri.modules.stream.autoclear import auto_clean
+from panipuri.modules.utils.thumbnails import gen_thumb
 
 wrong = {}
 
@@ -139,7 +139,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await music_off(chat_id)
-        await aditya.pause_stream(chat_id)
+        await dudu.pause_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention)
         )
@@ -150,13 +150,13 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await music_on(chat_id)
-        await aditya.resume_stream(chat_id)
+        await dudu.resume_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_4"].format(mention)
         )
     elif command == "Stop" or command == "End":
         await CallbackQuery.answer()
-        await aditya.stop_stream(chat_id)
+        await dudu.stop_stream(chat_id)
         await set_loop(chat_id, 0)
         await CallbackQuery.message.reply_text(
             _["admin_9"].format(mention)
@@ -168,7 +168,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await mute_on(chat_id)
-        await aditya.mute_stream(chat_id)
+        await dudu.mute_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_6"].format(mention)
         )
@@ -179,7 +179,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await mute_off(chat_id)
-        await aditya.unmute_stream(chat_id)
+        await dudu.unmute_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_8"].format(mention)
         )
@@ -230,7 +230,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     _["admin_10"].format(mention)
                 )
                 try:
-                    return await aditya.stop_stream(chat_id)
+                    return await dudu.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -241,7 +241,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 await CallbackQuery.message.reply_text(
                     _["admin_10"].format(mention)
                 )
-                return await aditya.stop_stream(chat_id)
+                return await dudu.stop_stream(chat_id)
             except:
                 return
         await CallbackQuery.answer()
@@ -259,7 +259,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     _["admin_11"].format(title)
                 )
             try:
-                await aditya.skip_stream(chat_id, link, video=status)
+                await dudu.skip_stream(chat_id, link, video=status)
             except Exception:
                 return await CallbackQuery.message.reply_text(
                     _["call_9"]
@@ -291,7 +291,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 return await mystic.edit_text(_["call_9"])
             try:
-                await aditya.skip_stream(
+                await dudu.skip_stream(
                     chat_id, file_path, video=status
                 )
             except Exception:
@@ -312,7 +312,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await mystic.delete()
         elif "index_" in queued:
             try:
-                await aditya.skip_stream(
+                await dudu.skip_stream(
                     chat_id, videoid, video=status
                 )
             except Exception:
@@ -330,7 +330,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await CallbackQuery.edit_message_text(txt)
         else:
             try:
-                await aditya.skip_stream(chat_id, queued, video=status)
+                await dudu.skip_stream(chat_id, queued, video=status)
             except Exception:
                 return await CallbackQuery.message.reply_text(
                     _["call_9"]
@@ -425,7 +425,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if n == 0:
                 return await mystic.edit_text(_["admin_30"])
         try:
-            await aditya.seek_stream(
+            await dudu.seek_stream(
                 chat_id,
                 file_path,
                 seconds_to_min(to_seek),

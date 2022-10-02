@@ -13,15 +13,15 @@ from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 from pyrogram import filters
 
-from AdityaHalder import bot
-from AdityaHalder.utilities import config
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder.misc import HAPP, SUDOERS, XCB
-from AdityaHalder.modules.database import (get_active_chats,
+from panipuri import bot
+from panipuri.utilities import config
+from panipuri.utilities.strings import get_command
+from panipuri.misc import HAPP, SUDOERS, XCB
+from panipuri.modules.database import (get_active_chats,
                                        remove_active_chat,
                                        remove_active_video_chat)
-from AdityaHalder.modules.decorators.language import language
-from AdityaHalder.modules.utils.pastebin import Adityabin
+from panipuri.modules.decorators.language import language
+from panipuri.modules.utils.pastebin import dudubin
 
 # Commands
 GETLOG_COMMAND = get_command("GETLOG_COMMAND")
@@ -47,7 +47,7 @@ async def log_(client, message, _):
             if HAPP is None:
                 return await message.reply_text(_["heroku_1"])
             data = HAPP.get_log()
-            link = await Adityabin(data)
+            link = await dudubin(data)
             return await message.reply_text(link)
         else:
             if os.path.exists(config.LOG_FILE_NAME):
@@ -60,7 +60,7 @@ async def log_(client, message, _):
                     NUMB = 100
                 for x in lines[-NUMB:]:
                     data += x
-                link = await Adityabin(data)
+                link = await dudubin(data)
                 return await message.reply_text(link)
             else:
                 return await message.reply_text(_["heroku_2"])
@@ -256,7 +256,7 @@ async def update_(client, message, _):
     _update_response_ = "<b>A new update is available for the Bot!</b>\n\n➣ Pushing Updates Now</code>\n\n**<u>Updates:</u>**\n\n"
     _final_updates_ = _update_response_ + updates
     if len(_final_updates_) > 4096:
-        url = await Adityabin(updates)
+        url = await dudubin(updates)
         nrs = await response.edit(
             f"<b>A new update is available for the Bot!</b>\n\n➣ Pushing Updates Now</code>\n\n**<u>Updates:</u>**\n\n[Click Here to checkout Updates]({url})"
         )
@@ -339,4 +339,4 @@ async def restart_(_, message):
     await response.edit(
         "**🥀 𝐑𝐞𝐛𝐨𝐨𝐭 𝐇𝐚𝐬 𝐁𝐞𝐞𝐧 𝐈𝐧𝐢𝐭𝐢𝐚𝐭𝐞𝐝\n𝐈𝐧 𝐁𝐨𝐭'𝐬 ❥︎ 𝐒𝐲𝐬𝐭𝐞𝐦❗️...\n\n🌷 𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝟐 𝐌𝐢𝐧𝐮𝐭𝐞𝐬 𝐔𝐧𝐓𝐢𝐥\n𝐓𝐡𝐞 𝐁𝐨𝐭 𝐑𝐞𝐬𝐭𝐚𝐫𝐭𝐬 💞 ...**"
     )
-    os.system(f"kill -9 {os.getpid()} && python3 -m AdityaHalder")
+    os.system(f"kill -9 {os.getpid()} && python3 -m panipuri")

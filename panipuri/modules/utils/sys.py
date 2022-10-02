@@ -1,7 +1,7 @@
 import time
 import psutil
-from AdityaHalder.misc import _boot_
-from AdityaHalder.modules.utils.formatters import get_readable_time
+from panipuri.misc import _boot_
+from panipuri.modules.utils.formatters import get_readable_time
 
 
 async def bot_sys_stats():

@@ -8,13 +8,13 @@ from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, InputMediaAudio,
                             InputMediaVideo, Message)
 
-from AdityaHalder.utilities.config import (BANNED_USERS, SONG_DOWNLOAD_DURATION,
+from panipuri.utilities.config import (BANNED_USERS, SONG_DOWNLOAD_DURATION,
                     SONG_DOWNLOAD_DURATION_LIMIT)
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import YouTube, bot
-from AdityaHalder.modules.decorators.language import language, languageCB
-from AdityaHalder.modules.utils.formatters import convert_bytes
-from AdityaHalder.utilities.inline.song import song_markup
+from panipuri.utilities.strings import get_command
+from panipuri import YouTube, bot
+from panipuri.modules.decorators.language import language, languageCB
+from panipuri.modules.utils.formatters import convert_bytes
+from panipuri.utilities.inline.song import song_markup
 
 # Command
 SONG_COMMAND = get_command("SONG_COMMAND")

@@ -1,4 +1,4 @@
-# Aditya Halder
+# dudu dudu
 from motor.motor_asyncio import AsyncIOMotorClient as _mongo_client_
 from pymongo import MongoClient
 from pyrogram import Client
@@ -14,7 +14,7 @@ if config.MONGO_DB_URL is None:
         "🥀 𝐍𝐨 𝐌𝐨𝐧𝐠𝐨 𝐃𝐁 𝐔𝐫𝐥 𝐅𝐨𝐮𝐧𝐝 ✨...\n\n🌹 𝐘𝐨𝐮𝐫 𝐁𝐨𝐭 𝐖𝐢𝐥𝐥 𝐖𝐨𝐫𝐤 𝐎𝐧\nपानीपुरी 2.0'𝐬 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 ✨ ..."
     )
     temp_client = Client(
-        "Aditya",
+        "dudu",
         bot_token=config.BOT_TOKEN,
         api_id=config.API_ID,
         api_hash=config.API_HASH,
@@ -30,5 +30,5 @@ if config.MONGO_DB_URL is None:
 else:
     _mongo_async_ = _mongo_client_(config.MONGO_DB_URL)
     _mongo_sync_ = MongoClient(config.MONGO_DB_URL)
-    mongodb = _mongo_async_.Aditya
-    pymongodb = _mongo_sync_.Aditya
+    mongodb = _mongo_async_.dudu
+    pymongodb = _mongo_sync_.dudu

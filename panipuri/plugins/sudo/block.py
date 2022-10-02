@@ -1,13 +1,13 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AdityaHalder import bot
-from AdityaHalder.misc import SUDOERS
-from AdityaHalder.modules.database import add_gban_user, remove_gban_user
-from AdityaHalder.modules.decorators.language import language
+from panipuri import bot
+from panipuri.misc import SUDOERS
+from panipuri.modules.database import add_gban_user, remove_gban_user
+from panipuri.modules.decorators.language import language
 
-from AdityaHalder.utilities.config import BANNED_USERS
-from AdityaHalder.utilities.strings import get_command
+from panipuri.utilities.config import BANNED_USERS
+from panipuri.utilities.strings import get_command
 
 # Command
 BLOCK_COMMAND = get_command("BLOCK_COMMAND")

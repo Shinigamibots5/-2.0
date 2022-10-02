@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import bot
-from AdityaHalder.misc import SUDOERS
-from AdityaHalder.modules.database import set_video_limit
-from AdityaHalder.modules.decorators.language import language
+from panipuri.utilities.strings import get_command
+from panipuri import bot
+from panipuri.misc import SUDOERS
+from panipuri.modules.database import set_video_limit
+from panipuri.modules.decorators.language import language
 
 VIDEOLIMIT_COMMAND = get_command("VIDEOLIMIT_COMMAND")
 

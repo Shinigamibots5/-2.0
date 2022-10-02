@@ -7,26 +7,26 @@ from pyrogram.types import (InlineKeyboardMarkup, InputMediaPhoto,
                             Message)
 from pytgcalls.exceptions import NoActiveGroupCall
 
-from AdityaHalder.utilities import config
-from AdityaHalder.utilities.events.command import command
-from AdityaHalder.utilities.config import BANNED_USERS, lyrical
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder.utilities.inline.playlist import botplaylist_markup
-from AdityaHalder.utilities.inline.play import (livestream_markup,                                           playlist_markup,
+from panipuri.utilities import config
+from panipuri.utilities.events.command import command
+from panipuri.utilities.config import BANNED_USERS, lyrical
+from panipuri.utilities.strings import get_command
+from panipuri.utilities.inline.playlist import botplaylist_markup
+from panipuri.utilities.inline.play import (livestream_markup,                                           playlist_markup,
                                            slider_markup, track_markup)
 
-from AdityaHalder import (Apple, Resso, SoundCloud, Spotify, Telegram,
+from panipuri import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, bot)
-from AdityaHalder.modules.core.call import aditya
-from AdityaHalder.modules.utils.formatters import seconds_to_min, time_to_seconds
-from AdityaHalder.modules.utils.channelplay import get_channeplayCB
-from AdityaHalder.modules.database import is_video_allowed
-from AdityaHalder.modules.decorators.language import languageCB
-from AdityaHalder.modules.decorators.play import PlayWrapper
-from AdityaHalder.modules.utils.formatters import formats
+from panipuri.modules.core.call import dudu
+from panipuri.modules.utils.formatters import seconds_to_min, time_to_seconds
+from panipuri.modules.utils.channelplay import get_channeplayCB
+from panipuri.modules.database import is_video_allowed
+from panipuri.modules.decorators.language import languageCB
+from panipuri.modules.decorators.play import PlayWrapper
+from panipuri.modules.utils.formatters import formats
 
-from AdityaHalder.modules.utils.logger import play_logs
-from AdityaHalder.modules.stream.stream import stream
+from panipuri.modules.utils.logger import play_logs
+from panipuri.modules.stream.stream import stream
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
@@ -328,7 +328,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await aditya.stream_call(url)
+                await dudu.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(
                     "There's an issue with the bot. Please report it to my owner and ask them to check logger group."
@@ -592,7 +592,7 @@ async def anonymous_check(client, CallbackQuery):
 
 
 @bot.on_callback_query(
-    filters.regex("AdityaPlaylists") & ~BANNED_USERS
+    filters.regex("duduPlaylists") & ~BANNED_USERS
 )
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):

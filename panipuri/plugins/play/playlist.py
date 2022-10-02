@@ -6,18 +6,18 @@ from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
-from AdityaHalder.utilities.config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import Carbon, YouTube, bot
-from AdityaHalder.modules.database import (delete_playlist, get_playlist,
+from panipuri.utilities.config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
+from panipuri.utilities.strings import get_command
+from panipuri import Carbon, YouTube, bot
+from panipuri.modules.database import (delete_playlist, get_playlist,
                                        get_playlist_names,
                                        save_playlist)
-from AdityaHalder.modules.decorators.language import language, languageCB
-from AdityaHalder.utilities.inline.playlist import (botplaylist_markup,
+from panipuri.modules.decorators.language import language, languageCB
+from panipuri.utilities.inline.playlist import (botplaylist_markup,
                                               get_playlist_markup,
                                               warning_markup)
-from AdityaHalder.modules.utils.pastebin import Adityabin
-from AdityaHalder.modules.stream.stream import stream
+from panipuri.modules.utils.pastebin import dudubin
+from panipuri.modules.stream.stream import stream
 
 # Command
 PLAYLIST_COMMAND = get_command("PLAYLIST_COMMAND")
@@ -46,7 +46,7 @@ async def check_playlist(client, message: Message, _):
         count += 1
         msg += f"\n\n{count}- {title[:70]}\n"
         msg += _["playlist_5"].format(duration)
-    link = await Adityabin(msg)
+    link = await dudubin(msg)
     lines = msg.count("\n")
     if lines >= 17:
         car = os.linesep.join(msg.split(os.linesep)[:17])

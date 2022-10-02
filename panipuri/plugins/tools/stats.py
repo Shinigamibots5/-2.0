@@ -9,20 +9,20 @@ from pyrogram.errors import MessageIdInvalid
 from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
-from AdityaHalder.utilities import config
-from AdityaHalder.utilities.config import BANNED_USERS, MUSIC_BOT_NAME
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import YouTube, bot
-from AdityaHalder.modules.core.app import assistants
-from AdityaHalder.misc import SUDOERS, pymongodb
-from AdityaHalder.plugins import ALL_MODULES
-from AdityaHalder.modules.database import (get_global_tops,
+from panipuri.utilities import config
+from panipuri.utilities.config import BANNED_USERS, MUSIC_BOT_NAME
+from panipuri.utilities.strings import get_command
+from panipuri import YouTube, bot
+from panipuri.modules.core.app import assistants
+from panipuri.misc import SUDOERS, pymongodb
+from panipuri.plugins import ALL_MODULES
+from panipuri.modules.database import (get_global_tops,
                                        get_particulars, get_queries,
                                        get_served_chats,
                                        get_served_users, get_sudoers,
                                        get_top_chats, get_topp_users)
-from AdityaHalder.modules.decorators.language import language, languageCB
-from AdityaHalder.utilities.inline.stats import (back_stats_buttons,
+from panipuri.modules.decorators.language import language, languageCB
+from panipuri.utilities.inline.stats import (back_stats_buttons,
                                            back_stats_markup,
                                            get_stats_markup,
                                            overallback_stats_markup,

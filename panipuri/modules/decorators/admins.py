@@ -1,20 +1,20 @@
-# Aditya Halder
+# dudu dudu
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from AdityaHalder import bot
-from AdityaHalder.misc import SUDOERS
-from AdityaHalder.utilities.config import adminlist
-from AdityaHalder.utilities.strings import get_string
+from panipuri import bot
+from panipuri.misc import SUDOERS
+from panipuri.utilities.config import adminlist
+from panipuri.utilities.strings import get_string
 
 
-from AdityaHalder.modules.database import (get_authuser_names, get_cmode,
+from panipuri.modules.database import (get_authuser_names, get_cmode,
                                              get_lang, is_active_chat,
                                              is_commanddelete_on,
                                              is_maintenance,
                                              is_nonadmin_chat)
 
-from AdityaHalder.modules.utils.formatters import int_to_alpha
+from panipuri.modules.utils.formatters import int_to_alpha
 
 
 def AdminRightsCheck(mystic):

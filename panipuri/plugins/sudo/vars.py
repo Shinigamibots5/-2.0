@@ -2,12 +2,12 @@ import asyncio
 
 from pyrogram import filters
 
-from AdityaHalder.utilities import config
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import bot
-from AdityaHalder.misc import SUDOERS
-from AdityaHalder.modules.database.memorydatabase import get_video_limit
-from AdityaHalder.modules.utils.formatters import convert_bytes
+from panipuri.utilities import config
+from panipuri.utilities.strings import get_command
+from panipuri import bot
+from panipuri.misc import SUDOERS
+from panipuri.modules.database.memorydatabase import get_video_limit
+from panipuri.modules.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 

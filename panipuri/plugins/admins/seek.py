@@ -1,13 +1,13 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AdityaHalder.utilities.config import BANNED_USERS
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import YouTube, bot
-from AdityaHalder.modules.core.call import aditya
-from AdityaHalder.misc import db
-from AdityaHalder.modules.utils import seconds_to_min
-from AdityaHalder.modules.decorators import AdminRightsCheck
+from panipuri.utilities.config import BANNED_USERS
+from panipuri.utilities.strings import get_command
+from panipuri import YouTube, bot
+from panipuri.modules.core.call import dudu
+from panipuri.misc import db
+from panipuri.modules.utils import seconds_to_min
+from panipuri.modules.decorators import AdminRightsCheck
 
 # Commands
 SEEK_COMMAND = get_command("SEEK_COMMAND")
@@ -62,7 +62,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
         if n == 0:
             return await message.reply_text(_["admin_30"])
     try:
-        await aditya.seek_stream(
+        await dudu.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),

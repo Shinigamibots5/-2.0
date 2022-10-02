@@ -2,12 +2,12 @@ import asyncio
 
 from pyrogram.types import InlineKeyboardMarkup
 
-from AdityaHalder.misc import db
-from AdityaHalder.modules.database import (get_active_chats, get_lang,
+from panipuri.misc import db
+from panipuri.modules.database import (get_active_chats, get_lang,
                                        is_music_playing)
-from AdityaHalder.modules.utils.formatters import seconds_to_min
-from AdityaHalder.utilities.strings import get_string
-from AdityaHalder.utilities.inline import (stream_markup_timer,
+from panipuri.modules.utils.formatters import seconds_to_min
+from panipuri.utilities.strings import get_string
+from panipuri.utilities.inline import (stream_markup_timer,
                                      telegram_markup_timer)
 
 from ..admins.callback import wrong

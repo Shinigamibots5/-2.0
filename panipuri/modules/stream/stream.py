@@ -4,21 +4,21 @@ from typing import Union
 
 from pyrogram.types import InlineKeyboardMarkup
 
-from AdityaHalder.utilities import config
-from AdityaHalder import Carbon, YouTube, bot
-from AdityaHalder.modules.core.call import aditya
-from AdityaHalder.misc import db
-from AdityaHalder.modules.database import (add_active_chat,
+from panipuri.utilities import config
+from panipuri import Carbon, YouTube, bot
+from panipuri.modules.core.call import dudu
+from panipuri.misc import db
+from panipuri.modules.database import (add_active_chat,
                                              add_active_video_chat,
                                              is_active_chat,
                                              is_video_allowed, music_on)
-from AdityaHalder.modules.utils.exceptions import AssistantErr
-from AdityaHalder.utilities.inline.play import (stream_markup,
+from panipuri.modules.utils.exceptions import AssistantErr
+from panipuri.utilities.inline.play import (stream_markup,
                                               telegram_markup)
-from AdityaHalder.utilities.inline.playlist import close_markup
-from AdityaHalder.modules.utils.pastebin import Adityabin
-from AdityaHalder.modules.stream.queue import put_queue, put_queue_index
-from AdityaHalder.modules.utils.thumbnails import gen_thumb
+from panipuri.utilities.inline.playlist import close_markup
+from panipuri.modules.utils.pastebin import dudubin
+from panipuri.modules.stream.queue import put_queue, put_queue_index
+from panipuri.modules.utils.thumbnails import gen_thumb
 
 
 async def stream(
@@ -40,7 +40,7 @@ async def stream(
         if not await is_video_allowed(chat_id):
             raise AssistantErr(_["play_7"])
     if forceplay:
-        await aditya.force_stop_stream(chat_id)
+        await dudu.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['playlist_16']}\n\n"
         count = 0
@@ -89,7 +89,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_16"])
-                await aditya.join_call(
+                await dudu.join_call(
                     chat_id, original_chat_id, file_path, video=status
                 )
                 await put_queue(
@@ -120,7 +120,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await Adityabin(msg)
+            link = await dudubin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -174,7 +174,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await aditya.join_call(
+            await dudu.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -232,7 +232,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await aditya.join_call(
+            await dudu.join_call(
                 chat_id, original_chat_id, file_path, video=None
             )
             await put_queue(
@@ -290,7 +290,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await aditya.join_call(
+            await dudu.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -355,7 +355,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await aditya.join_call(
+            await dudu.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await put_queue(
@@ -412,7 +412,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await aditya.join_call(
+            await dudu.join_call(
                 chat_id,
                 original_chat_id,
                 link,

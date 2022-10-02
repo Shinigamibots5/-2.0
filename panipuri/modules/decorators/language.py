@@ -1,7 +1,7 @@
-from AdityaHalder.misc import SUDOERS
-from AdityaHalder.modules.database import (get_lang, is_commanddelete_on,
+from panipuri.misc import SUDOERS
+from panipuri.modules.database import (get_lang, is_commanddelete_on,
                                              is_maintenance)
-from AdityaHalder.utilities.strings import get_string
+from panipuri.utilities.strings import get_string
 
 def language(mystic):
     async def wrapper(_, message, **kwargs):

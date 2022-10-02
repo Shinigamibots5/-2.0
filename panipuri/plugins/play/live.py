@@ -1,19 +1,19 @@
 #
 # Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
 #
-# This file is part of < https://github.com/TeamYukki/AdityaHalderBot > project,
+# This file is part of < https://github.com/TeamYukki/panipuriBot > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/AdityaHalderBot/blob/master/LICENSE >
+# Please see < https://github.com/TeamYukki/panipuriBot/blob/master/LICENSE >
 #
 # All rights reserved.
 
 from pyrogram import filters
 
-from AdityaHalder.utilities.config import BANNED_USERS
-from AdityaHalder import YouTube, bot
-from AdityaHalder.modules.utils.channelplay import get_channeplayCB
-from AdityaHalder.modules.decorators.language import languageCB
-from AdityaHalder.modules.stream.stream import stream
+from panipuri.utilities.config import BANNED_USERS
+from panipuri import YouTube, bot
+from panipuri.modules.utils.channelplay import get_channeplayCB
+from panipuri.modules.decorators.language import languageCB
+from panipuri.modules.stream.stream import stream
 
 
 @bot.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)

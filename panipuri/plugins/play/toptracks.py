@@ -3,15 +3,15 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup
 
-from AdityaHalder import bot
-from AdityaHalder.modules.database import (get_global_tops,
+from panipuri import bot
+from panipuri.modules.database import (get_global_tops,
                                        get_particulars, get_userss)
-from AdityaHalder.modules.decorators.language import languageCB
-from AdityaHalder.utilities.config import BANNED_USERS
-from AdityaHalder.utilities.inline.playlist import (botplaylist_markup,
+from panipuri.modules.decorators.language import languageCB
+from panipuri.utilities.config import BANNED_USERS
+from panipuri.utilities.inline.playlist import (botplaylist_markup,
                                               failed_top_markup,
                                               top_play_markup)
-from AdityaHalder.modules.stream.stream import stream
+from panipuri.modules.stream.stream import stream
 
 loop = asyncio.get_running_loop()
 

@@ -1,8 +1,8 @@
 from typing import Union
 
-from AdityaHalder.utilities.config import autoclean, chatstats, userstats
-from AdityaHalder.utilities.config.config import time_to_seconds
-from AdityaHalder.misc import db
+from panipuri.utilities.config import autoclean, chatstats, userstats
+from panipuri.utilities.config.config import time_to_seconds
+from panipuri.misc import db
 
 
 async def put_queue(

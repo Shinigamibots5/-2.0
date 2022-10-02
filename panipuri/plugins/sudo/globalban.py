@@ -5,19 +5,19 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
-from AdityaHalder import bot
-from AdityaHalder.misc import SUDOERS
-from AdityaHalder.modules.utils import get_readable_time
-from AdityaHalder.modules.database import (add_banned_user,
+from panipuri import bot
+from panipuri.misc import SUDOERS
+from panipuri.modules.utils import get_readable_time
+from panipuri.modules.database import (add_banned_user,
                                        get_banned_count,
                                        get_banned_users,
                                        get_served_chats,
                                        is_banned_user,
                                        remove_banned_user)
-from AdityaHalder.modules.decorators.language import language
+from panipuri.modules.decorators.language import language
 
-from AdityaHalder.utilities.config import BANNED_USERS
-from AdityaHalder.utilities.strings import get_command
+from panipuri.utilities.config import BANNED_USERS
+from panipuri.utilities.strings import get_command
 
 # Command
 GBAN_COMMAND = get_command("GBAN_COMMAND")

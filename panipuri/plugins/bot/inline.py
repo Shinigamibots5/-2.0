@@ -3,9 +3,9 @@ from pyrogram.types import (InlineKeyboardButton,
                             InlineQueryResultPhoto)
 from youtubesearchpython.__future__ import VideosSearch
 
-from AdityaHalder.utilities.config import BANNED_USERS, MUSIC_BOT_NAME
-from AdityaHalder import bot
-from AdityaHalder.modules.utils.inlinequery import answer
+from panipuri.utilities.config import BANNED_USERS, MUSIC_BOT_NAME
+from panipuri import bot
+from panipuri.modules.utils.inlinequery import answer
 
 
 @bot.on_inline_query(~BANNED_USERS)

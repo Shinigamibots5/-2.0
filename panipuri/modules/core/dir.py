@@ -1,10 +1,10 @@
-# Aditya Halder
+# dudu dudu
 
 import os
 import sys
 from os import listdir, mkdir
 
-from AdityaHalder.console import LOGGER
+from panipuri.console import LOGGER
 
 
 def dirr():

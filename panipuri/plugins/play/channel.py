@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AdityaHalder.utilities.config import BANNED_USERS
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import bot
-from AdityaHalder.modules.database import set_cmode
-from AdityaHalder.modules.decorators.admins import AdminActual
+from panipuri.utilities.config import BANNED_USERS
+from panipuri.utilities.strings import get_command
+from panipuri import bot
+from panipuri.modules.database import set_cmode
+from panipuri.modules.decorators.admins import AdminActual
 
 ### Multi-Lang Commands
 CHANNELPLAY_COMMAND = get_command("CHANNELPLAY_COMMAND")

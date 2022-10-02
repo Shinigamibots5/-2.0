@@ -2,11 +2,11 @@ import asyncio
 import random
 from datetime import datetime, timedelta
 
-from AdityaHalder.utilities import config
-from AdityaHalder.utilities.config import clean
-from AdityaHalder.utilities.strings import get_string
-from AdityaHalder import bot
-from AdityaHalder.modules.database import (get_lang,
+from panipuri.utilities import config
+from panipuri.utilities.config import clean
+from panipuri.utilities.strings import get_string
+from panipuri import bot
+from panipuri.modules.database import (get_lang,
                                        get_private_served_chats,
                                        get_served_chats,
                                        is_suggestion)

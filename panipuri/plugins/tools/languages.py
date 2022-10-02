@@ -2,11 +2,11 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, Message
 
-from AdityaHalder.utilities.config import BANNED_USERS
-from AdityaHalder.utilities.strings import get_command, get_string, languages_present
-from AdityaHalder import bot
-from AdityaHalder.modules.database import get_lang, set_lang
-from AdityaHalder.modules.decorators import (ActualAdminCB, language,
+from panipuri.utilities.config import BANNED_USERS
+from panipuri.utilities.strings import get_command, get_string, languages_present
+from panipuri import bot
+from panipuri.modules.database import get_lang, set_lang
+from panipuri.modules.decorators import (ActualAdminCB, language,
                                          languageCB)
 
 # Languages Available

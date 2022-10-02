@@ -1,10 +1,10 @@
 import asyncio
 from datetime import datetime
 
-from AdityaHalder.utilities import config
-from AdityaHalder import bot
-from AdityaHalder.modules.core.call import aditya, autoend
-from AdityaHalder.modules.database import (get_client, is_active_chat,
+from panipuri.utilities import config
+from panipuri import bot
+from panipuri.modules.core.call import dudu, autoend
+from panipuri.modules.database import (get_client, is_active_chat,
                                        is_autoend)
 
 
@@ -13,7 +13,7 @@ async def auto_leave():
         while not await asyncio.sleep(
             config.AUTO_LEAVE_ASSISTANT_TIME
         ):
-            from adityaMusic.core.userbot import assistants
+            from duduMusic.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -64,7 +64,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await aditya.stop_stream(chat_id)
+                    await dudu.stop_stream(chat_id)
                 except:
                     continue
                 try:

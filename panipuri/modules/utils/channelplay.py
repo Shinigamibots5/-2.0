@@ -1,5 +1,5 @@
-from AdityaHalder import bot
-from AdityaHalder.modules.database import get_cmode
+from panipuri import bot
+from panipuri.modules.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):

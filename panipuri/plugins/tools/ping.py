@@ -2,12 +2,12 @@
 from datetime import datetime
 from pyrogram import filters
 from pyrogram.types import Message
-from AdityaHalder.utilities.config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
-from AdityaHalder.utilities.strings import get_command
-from AdityaHalder import bot
-from AdityaHalder.modules.core.call import aditya
-from AdityaHalder.modules.utils import bot_sys_stats
-from AdityaHalder.modules.decorators.language import language
+from panipuri.utilities.config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
+from panipuri.utilities.strings import get_command
+from panipuri import bot
+from panipuri.modules.core.call import dudu
+from panipuri.modules.utils import bot_sys_stats
+from panipuri.modules.decorators.language import language
 
 ### Commands
 PING_COMMAND = get_command("PING_COMMAND")
@@ -26,7 +26,7 @@ async def ping_com(client, message: Message, _):
         caption=_["ping_1"],
     )
     start = datetime.now()
-    pytgping = await aditya.ping()
+    pytgping = await dudu.ping()
     UP, CPU, RAM, DISK = await bot_sys_stats()
     resp = (datetime.now() - start).microseconds / 1000
     await response.edit_text(
