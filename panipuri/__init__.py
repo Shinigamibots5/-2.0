@@ -1,10 +1,10 @@
 # ADITYA PLAYER
 
-from AdityaHalder.modules.core.app import App
-from AdityaHalder.modules.core.bot import Bot
-from AdityaHalder.modules.core.dir import dirr
-from AdityaHalder.modules.core.git import git
-from AdityaHalder.misc import dbb, heroku, sudo
+from panipuri.modules.core.app import App
+from panipuri.modules.core.bot import Bot
+from panipuri.modules.core.dir import dirr
+from panipuri.modules.core.git import git
+from panipuri.misc import dbb, heroku, sudo
 
 from .console import LOGGER
 
@@ -29,7 +29,7 @@ bot = Bot()
 # Assistant Client
 app = App()
 
-from AdityaHalder.utilities.media import *
+from panipuri.utilities.media import *
 
 YouTube = YouTubeAPI()
 Carbon = CarbonAPI()
