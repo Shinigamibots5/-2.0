@@ -2,8 +2,8 @@
 
 import sys
 from pyrogram import Client
-from AdityaHalder.utilities import config
-from AdityaHalder.console import LOGGER
+from panipuri.utilities import config
+from panipuri.console import LOGGER
 
 
 class Bot(Client):
