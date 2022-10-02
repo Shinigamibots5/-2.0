@@ -1,8 +1,8 @@
 from typing import Union
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from AdityaHalder import bot
-from AdityaHalder.utilities.config import SUPPORT_GROUP
+from panipuri import bot
+from panipuri.utilities.config import SUPPORT_GROUP
 
 def help_pannel(_, START: Union[bool, int] = None):
     first = [

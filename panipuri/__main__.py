@@ -8,7 +8,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 from panipuri.utilities import config
 from panipuri.utilities.config.config import BANNED_USERS
 from panipuri import app, bot, LOGGER
-from panipuri.modules.core.call import aditya
+from panipuri.modules.core.call import dudu
 from panipuri.plugins import ALL_MODULES
 from panipuri.modules.database import get_banned_users, get_gbanned
 
@@ -50,9 +50,9 @@ async def init():
         "🥀 𝐒𝐮𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐈𝐦𝐩𝐨𝐫𝐭𝐞𝐝 𝐀𝐥𝐥 𝐌𝐨𝐝𝐮𝐥𝐞𝐬 🌿 "
     )
     await app.start()
-    await aditya.start()
+    await dudu.start()
     try:
-        await aditya.stream_call(
+        await dudu.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
@@ -62,7 +62,7 @@ async def init():
         sys.exit()
     except:
         pass
-    await aditya.decorators()
+    await dudu.decorators()
     LOGGER("पानीपुरी").info("🥳 𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐮𝐥𝐚𝐭𝐢𝐨𝐧𝐬, 𝐘𝐨𝐮𝐫 𝐁𝐨𝐭 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐃𝐞𝐩𝐥𝐨𝐲𝐞𝐝 ✨...")
     await idle()
 

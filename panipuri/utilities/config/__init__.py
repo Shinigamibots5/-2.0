@@ -1,3 +1,3 @@
-#AdityaPlayer
+#duduPlayer
 
 from .config import *

@@ -1,10 +1,10 @@
-# Powered By @AdityaHalder
+# Powered By @panipuri
 
 from typing import Union
 from pyrogram.types import InlineKeyboardButton
 
-from AdityaHalder import bot
-from AdityaHalder.utilities.config import SUPPORT_CHANNEL, SUPPORT_GROUP
+from panipuri import bot
+from panipuri.utilities.config import SUPPORT_CHANNEL, SUPPORT_GROUP
 
 
 def start_pannel(_):

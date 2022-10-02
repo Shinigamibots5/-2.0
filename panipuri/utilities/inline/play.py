@@ -1,9 +1,9 @@
-# Powered By @AdityaHalder
+# Powered By @panipuri
 
 import random
 from pyrogram.types import InlineKeyboardButton
 
-from AdityaHalder.utilities.config import SUPPORT_GROUP
+from panipuri.utilities.config import SUPPORT_GROUP
 
 
 def stream_markup_timer(_, videoid, chat_id, played, dur):
@@ -80,11 +80,11 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(
                 text="🔊 𝐏𝐥𝐚𝐲 𝐀𝐮𝐝𝐢𝐨",
-                callback_data=f"AdityaPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
+                callback_data=f"duduPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
                 text="𝐏𝐥𝐚𝐲 𝐕𝐢𝐝𝐞𝐨 📺",
-                callback_data=f"AdityaPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
+                callback_data=f"duduPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
             ),
         ],
         [

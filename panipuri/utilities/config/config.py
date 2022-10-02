@@ -1,4 +1,4 @@
-# Powered By @AdityaHalder
+# Powered By @panipuri
 
 import os
 import re
@@ -86,24 +86,24 @@ autoclean = []
 LOG = 2
 YTDOWNLOADER = 1
 BANNED_USERS = filters.user()
-LOG_FILE_NAME = "adityalogs.txt"
+LOG_FILE_NAME = "dudulogs.txt"
 ############################
 
 
-# All Images Of Aditya Player // @AdityaHalder
+# All Images Of dudu Player // @panipuri
 START_IMG_URL = getenv("START_IMG_URL", f"https://te.legra.ph/file/43716507e3ccbf2e4ce36.jpg")
-PING_IMG_URL = getenv("PING_IMG_URL", "AdityaHalder/resource/ping.jpeg")
-PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", "AdityaHalder/resource/playlist.jpeg")
-GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", "AdityaHalder/resource/global.jpeg")
-STATS_IMG_URL = getenv("STATS_IMG_URL", "AdityaHalder/resource/stats.jpeg")
-TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL", "AdityaHalder/resource/audio.jpeg")
-TELEGRAM_VIDEO_URL = getenv("TELEGRAM_VIDEO_URL", "AdityaHalder/resource/video.jpeg")
-STREAM_IMG_URL = getenv("STREAM_IMG_URL", "AdityaHalder/resource/stream.jpeg")
-SOUNCLOUD_IMG_URL = getenv("SOUNCLOUD_IMG_URL", "AdityaHalder/resource/soundcloud.jpeg")
-YOUTUBE_IMG_URL = getenv("YOUTUBE_IMG_URL", "AdityaHalder/resource/youtube.jpeg")
-SPOTIFY_ARTIST_IMG_URL = getenv("SPOTIFY_ARTIST_IMG_URL", "AdityaHalder/resource/SpotifyArtist.jpeg")
-SPOTIFY_ALBUM_IMG_URL = getenv("SPOTIFY_ALBUM_IMG_URL", "AdityaHalder/resource/SpotifyAlbum.jpeg")
-SPOTIFY_PLAYLIST_IMG_URL = getenv("SPOTIFY_PLAYLIST_IMG_URL", "AdityaHalder/resource/spotifyplaylist.jpeg")
+PING_IMG_URL = getenv("PING_IMG_URL", "panipuri/resource/ping.jpeg")
+PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", "panipuri/resource/playlist.jpeg")
+GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", "panipuri/resource/global.jpeg")
+STATS_IMG_URL = getenv("STATS_IMG_URL", "panipuri/resource/stats.jpeg")
+TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL", "panipuri/resource/audio.jpeg")
+TELEGRAM_VIDEO_URL = getenv("TELEGRAM_VIDEO_URL", "panipuri/resource/video.jpeg")
+STREAM_IMG_URL = getenv("STREAM_IMG_URL", "panipuri/resource/stream.jpeg")
+SOUNCLOUD_IMG_URL = getenv("SOUNCLOUD_IMG_URL", "panipuri/resource/soundcloud.jpeg")
+YOUTUBE_IMG_URL = getenv("YOUTUBE_IMG_URL", "panipuri/resource/youtube.jpeg")
+SPOTIFY_ARTIST_IMG_URL = getenv("SPOTIFY_ARTIST_IMG_URL", "panipuri/resource/SpotifyArtist.jpeg")
+SPOTIFY_ALBUM_IMG_URL = getenv("SPOTIFY_ALBUM_IMG_URL", "panipuri/resource/SpotifyAlbum.jpeg")
+SPOTIFY_PLAYLIST_IMG_URL = getenv("SPOTIFY_PLAYLIST_IMG_URL", "panipuri/resource/spotifyplaylist.jpeg")
 
 
 def time_to_seconds(time):
@@ -149,7 +149,7 @@ if GITHUB_REPO:
 
 
 if PING_IMG_URL:
-    if PING_IMG_URL != "AdityaHalder/resource/ping.jpeg":
+    if PING_IMG_URL != "panipuri/resource/ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
             print(
                 "[ERROR] - Your PING_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -157,7 +157,7 @@ if PING_IMG_URL:
             sys.exit()
 
 if PLAYLIST_IMG_URL:
-    if PLAYLIST_IMG_URL != "AdityaHalder/resource/playlist.jpeg":
+    if PLAYLIST_IMG_URL != "panipuri/resource/playlist.jpeg":
         if not re.match("(?:http|https)://", PLAYLIST_IMG_URL):
             print(
                 "[ERROR] - Your PLAYLIST_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -165,7 +165,7 @@ if PLAYLIST_IMG_URL:
             sys.exit()
 
 if GLOBAL_IMG_URL:
-    if GLOBAL_IMG_URL != "AdityaHalder/resource/global.jpeg":
+    if GLOBAL_IMG_URL != "panipuri/resource/global.jpeg":
         if not re.match("(?:http|https)://", GLOBAL_IMG_URL):
             print(
                 "[ERROR] - Your GLOBAL_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -174,7 +174,7 @@ if GLOBAL_IMG_URL:
 
 
 if STATS_IMG_URL:
-    if STATS_IMG_URL != "AdityaHalder/resource/stats.jpeg":
+    if STATS_IMG_URL != "panipuri/resource/stats.jpeg":
         if not re.match("(?:http|https)://", STATS_IMG_URL):
             print(
                 "[ERROR] - Your STATS_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -183,7 +183,7 @@ if STATS_IMG_URL:
 
 
 if TELEGRAM_AUDIO_URL:
-    if TELEGRAM_AUDIO_URL != "AdityaHalder/resource/audio.jpeg":
+    if TELEGRAM_AUDIO_URL != "panipuri/resource/audio.jpeg":
         if not re.match("(?:http|https)://", TELEGRAM_AUDIO_URL):
             print(
                 "[ERROR] - Your TELEGRAM_AUDIO_URL url is wrong. Please ensure that it starts with https://"
@@ -192,7 +192,7 @@ if TELEGRAM_AUDIO_URL:
 
 
 if STREAM_IMG_URL:
-    if STREAM_IMG_URL != "AdityaHalder/resource/stream.jpeg":
+    if STREAM_IMG_URL != "panipuri/resource/stream.jpeg":
         if not re.match("(?:http|https)://", STREAM_IMG_URL):
             print(
                 "[ERROR] - Your STREAM_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -201,7 +201,7 @@ if STREAM_IMG_URL:
 
 
 if SOUNCLOUD_IMG_URL:
-    if SOUNCLOUD_IMG_URL != "AdityaHalder/resource/soundcloud.jpeg":
+    if SOUNCLOUD_IMG_URL != "panipuri/resource/soundcloud.jpeg":
         if not re.match("(?:http|https)://", SOUNCLOUD_IMG_URL):
             print(
                 "[ERROR] - Your SOUNCLOUD_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -209,7 +209,7 @@ if SOUNCLOUD_IMG_URL:
             sys.exit()
 
 if YOUTUBE_IMG_URL:
-    if YOUTUBE_IMG_URL != "AdityaHalder/resource/youtube.jpeg":
+    if YOUTUBE_IMG_URL != "panipuri/resource/youtube.jpeg":
         if not re.match("(?:http|https)://", YOUTUBE_IMG_URL):
             print(
                 "[ERROR] - Your YOUTUBE_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -218,7 +218,7 @@ if YOUTUBE_IMG_URL:
 
 
 if TELEGRAM_VIDEO_URL:
-    if TELEGRAM_VIDEO_URL != "AdityaHalder/resource/video.jpeg":
+    if TELEGRAM_VIDEO_URL != "panipuri/resource/video.jpeg":
         if not re.match("(?:http|https)://", TELEGRAM_VIDEO_URL):
             print(
                 "[ERROR] - Your TELEGRAM_VIDEO_URL url is wrong. Please ensure that it starts with https://"

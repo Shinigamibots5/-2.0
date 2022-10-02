@@ -1,4 +1,4 @@
-# ADITYA PLAYER
+# dudu PLAYER
 
 from panipuri.modules.core.app import App
 from panipuri.modules.core.bot import Bot

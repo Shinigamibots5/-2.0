@@ -8,9 +8,9 @@ import yt_dlp
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
-from AdityaHalder.utilities import config
-from AdityaHalder.modules.database import is_on_off
-from AdityaHalder.modules.utils.formatters import time_to_seconds
+from panipuri.utilities import config
+from panipuri.modules.database import is_on_off
+from panipuri.modules.utils.formatters import time_to_seconds
 
 
 async def shell_cmd(cmd):

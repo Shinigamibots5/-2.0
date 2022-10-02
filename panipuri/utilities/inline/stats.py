@@ -1,6 +1,6 @@
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from AdityaHalder import bot
+from panipuri import bot
 
 
 def back_stats_markup(_):

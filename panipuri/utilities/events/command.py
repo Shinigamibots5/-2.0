@@ -1,8 +1,8 @@
-# Powered By @AdityaHalder
+# Powered By @panipuri
 
 from typing import Union, List
 from pyrogram import filters
-from AdityaHalder.utilities.config import COMMAND_PREFIXES
+from panipuri.utilities.config import COMMAND_PREFIXES
 
 
 # ╔══╗╔══╗╔══╗╔══╗╔═╦╗╔══╗╔═╗╔╗─╔══╗╔═╦╗╔═╗╔═╗

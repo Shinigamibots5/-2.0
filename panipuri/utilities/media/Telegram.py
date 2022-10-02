@@ -7,11 +7,11 @@ from typing import Union
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Voice)
 
-from AdityaHalder.utilities import config
-from AdityaHalder.utilities.config import MUSIC_BOT_NAME, lyrical
-from AdityaHalder import bot
+from panipuri.utilities import config
+from panipuri.utilities.config import MUSIC_BOT_NAME, lyrical
+from panipuri import bot
 
-from AdityaHalder.modules.utils.formatters import (convert_bytes, get_readable_time,
+from panipuri.modules.utils.formatters import (convert_bytes, get_readable_time,
                                 seconds_to_min)
 
 downloader = {}
