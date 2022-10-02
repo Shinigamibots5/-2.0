@@ -5,12 +5,12 @@ import sys
 from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
-from AdityaHalder.utilities import config
-from AdityaHalder.utilities.config.config import BANNED_USERS
-from AdityaHalder import app, bot, LOGGER
-from AdityaHalder.modules.core.call import aditya
-from AdityaHalder.plugins import ALL_MODULES
-from AdityaHalder.modules.database import get_banned_users, get_gbanned
+from panipuri.utilities import config
+from panipuri.utilities.config.config import BANNED_USERS
+from panipuri import app, bot, LOGGER
+from panipuri.modules.core.call import aditya
+from panipuri.plugins import ALL_MODULES
+from panipuri.modules.database import get_banned_users, get_gbanned
 
 loop = asyncio.get_event_loop()
 
