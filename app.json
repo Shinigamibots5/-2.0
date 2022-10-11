@@ -1,13 +1,13 @@
 {
-    "name": "Yukki Music Bot",
+    "name": "पानीपुरी  Music Bot",
     "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "logo": "https://telegra.ph/file/c0e014ff34f34d1056627.png",
+    "logo": "https://te.legra.ph/file/51d142cd1c5817832dd5c.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "Yukki",
-    "YukkiMusicBot",
+    "पानीपुरी ",
+    "पानीपुरी MusicBot",
     "telegram-bot",
     "pyrogram"
     ],
@@ -15,12 +15,12 @@
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "8942928",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "8edc5a0d1939f3a5de5dc44d021d52ca",
         "required": true
       },
       "AUTO_LEAVING_ASSISTANT": {
@@ -30,12 +30,12 @@
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "",
+        "value": "5301740177:AAGLkdZmmnxx1UhTUGuCQJoog_OZ1fQtctQ",
         "required": true
       },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
-        "value": "",
+        "value": "mongodb+srv://ticel98214:asdfggjkl@cluster0.hm6jsk4.mongodb.net/?retryWrites=true&w=majority",
         "required": true
       },
       "MUSIC_BOT_NAME": {
@@ -45,12 +45,12 @@
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "",
+        "value": "5143506371",
         "required": true
       },
       "STRING_SESSION": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
-        "value": "",
+        "value": "AQAhcW0m44_kPwCC5RNmiMq_vQosg5o7I2N_NofCTKui3p1LLgxXPHNrhTdWNTWbAQ_wSOvRxTtEBI3Q9N4vL1vQ2D2kKvTJcSp16CXjNvjfN4CrUkp_SEv98UPpghAtdvJPrkAjT49aStkbvvqLgclNssXhNekmvSgvPhMiqpCxKDpZ_FQr23oryxv-szD4ShuoNFqiJUTsxxuKYNB5ZmibC2JUoTOhGLgKOAVxntKrukMMtcl2XSmHCVWLwccz6YPSJqtlfPSFrWRLKKSfcxMLrY0ST9Kqk29Ey2YkpYF-M95Q8N_B_mLQ9kE-_vY9uWiSrXLkO_bmLa9Fc0hzhUEIeFza5gA",
         "required": true
       },
       "HEROKU_API_KEY": {
@@ -65,17 +65,17 @@
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "",
+        "value": "-1001615517255",
         "required": true
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/TeamYukki/YukkiMusicBot",
+        "value": "https://github.com/Shinigamibots5/MusicBot",
         "required": true
       },
       "UPSTREAM_BRANCH": {
         "description": "Upstream Repo's Branch Name",
-        "value": "master",
+        "value": "Shinigami",
         "required": true
       }
     },
