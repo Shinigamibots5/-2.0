@@ -2,7 +2,31 @@
 
 <p align="center"><a href="https://t.me/Bae_wafaa"><img src="https://te.legra.ph/file/43716507e3ccbf2e4ce36.jpg"></a></p>
 
+## ⚠️ Heroku / Okteto / Railway
 
+
+
+<h3 align="center">
+   ─「 Deploying on Heroku 」─
+
+</h3>
+
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/Shinigamibots5/-2.0"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+
+<h3 align="center">
+━━━━━━━━━━━━━━━━━━━━
+
+<h3 align="center">
+     ─「 पानीपुरी 」─
+<h3 align="center">     
+    # ✨ Easy To Deploy Direct In Repo✨
+
+The Easiest Way To Deploy This Bot Direct From GitHub
+
+<p align="center"><a href="https://heroku.com/deploy"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
+
+</h3>
+<h3 align="center">
 
 
 ### 🥀 𝐃𝐞𝐩𝐥𝐨𝐲 𝐎𝐧 𝐆𝐢𝐭𝐇𝐮𝐛 𝐒𝐞𝐫𝐯𝐞𝐫 (𝐊𝐚𝐚𝐥𝐢-𝐋𝐢𝐧𝐮𝐱) 💞...
