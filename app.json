@@ -70,7 +70,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/Shinigamibots5/MusicBot",
+        "value": "https://github.com/Shinigamibots5/-2.0",
         "required": true
       },
       "UPSTREAM_BRANCH": {
